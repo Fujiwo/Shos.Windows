@@ -2,10 +2,10 @@
 
 WPF (.NET Core) Library.
  - FontComboBox
- - EnumToBooleanConverter
+ - EnumToBooleanConverter (for Multiple Radio Buttons binding to a single enum)
 (for .NET Core 3.0 or later)
 
-* Install as a NuGet Package: [NuGet Gallery | Shos.Windows](https://www.nuget.org/packages/Shos.Windows"NuGet Gallery | Shos.Windows")
+* Install as a NuGet Package: [NuGet Gallery | Shos.Windows](https://www.nuget.org/packages/Shos.Windows "NuGet Gallery | Shos.Windows")
 
 ## Projects
 
@@ -16,7 +16,7 @@ WPF (.NET Core) Library.
 
 ### Shos.Windows.Data
 * WPF (.NET Core) Library
-** including EnumToBooleanConverter (for Radio Buttons binding to enum)
+** including EnumToBooleanConverter (for Multiple Radio Buttons binding to a single enum)
 * for .NET Core 3.0 or later
 
 ### Shos.Windows.Controls.FontComboBoxSample
@@ -45,7 +45,7 @@ Items are drawn with each font except symbol fonts.
 
 ### Nuget package
 
-Install as a NuGet Package: [NuGet Gallery | Shos.Windows] (https://www.nuget.org/packages/Shos.Windows/)
+Install as a NuGet Package: [NuGet Gallery | Shos.Windows](https://www.nuget.org/packages/Shos.Windows/)
 
 ## Author Info
 

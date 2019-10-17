@@ -12,9 +12,9 @@
     <Description>WPF (.NET Core) Control Library (FontComboBox) for .NET Core 3.0 or later</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <FileVersion>0.2.0.0</FileVersion>
-    <Version>0.2.0</Version>
+    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <FileVersion>0.3.0.0</FileVersion>
+    <Version>0.3.0</Version>
     <NeutralLanguage>en</NeutralLanguage>
     <Authors>Fujio Kojima</Authors>
     <Company>Sho's Software</Company>
