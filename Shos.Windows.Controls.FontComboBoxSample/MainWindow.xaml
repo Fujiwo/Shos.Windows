@@ -1,0 +1,27 @@
+﻿<Window x:Class="Shos.Windows.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:shoswindowscontrols="clr-namespace:Shos.Windows.Controls;assembly=Shos.Windows"
+        xmlns:shoswindowsdata="clr-namespace:Shos.Windows.Data;assembly=Shos.Windows"
+        xmlns:local="clr-namespace:Shos.Windows.Sample"
+        mc:Ignorable="d"
+        Title="Shos.Windows.Sample" Height="400" Width="400">
+    <Window.Resources>
+        <shoswindowsdata:EnumToBooleanConverter x:Key="enumToBooleanConverter" />
+        <local:MainViewModel x:Key="viewModel" />
+    </Window.Resources>
+    <StackPanel Orientation="Vertical" DataContext="{Binding Source={StaticResource viewModel}}">
+        <shoswindowscontrols:FontComboBox SelectedFontFamilyName="{Binding SelectedFontFamilyName, Mode=TwoWay}" SelectedLocalFontFamilyName="{Binding SelectedLocalFontFamilyName, Mode=TwoWay}" />
+        <TextBox Text="{Binding SelectedFontFamilyName, Mode=TwoWay}" FontFamily="{Binding SelectedFontFamilyName}" FontSize="{Binding FontSize}" />
+        <TextBox Text="{Binding SelectedLocalFontFamilyName, Mode=TwoWay}" FontFamily="{Binding SelectedFontFamilyName}" FontSize="{Binding FontSize}" />
+        <GroupBox Header="Font Size">
+            <StackPanel>
+                <RadioButton GroupName="Font Size" Content="Small"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Small , Mode=TwoWay }" />
+                <RadioButton GroupName="Font Size" Content="Medium" IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Medium, Mode=TwoWay }" />
+                <RadioButton GroupName="Font Size" Content="Large"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Large , Mode=TwoWay }" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shos.Windows", "Shos.Windows\Shos.Windows.csproj", "{FAC36104-B1F7-4A6F-90F4-9183E1E0BA16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shos.Windows.Sample", "Shos.Windows.Controls.FontComboBoxSample\Shos.Windows.Sample.csproj", "{CD8C1B27-6A8C-4A54-B609-237671DD50AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CE6905C-002B-4D84-A807-38FA3B8B4844}"
+	ProjectSection(SolutionItems) = preProject
+		license = license
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC36104-B1F7-4A6F-90F4-9183E1E0BA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC36104-B1F7-4A6F-90F4-9183E1E0BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC36104-B1F7-4A6F-90F4-9183E1E0BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC36104-B1F7-4A6F-90F4-9183E1E0BA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8C1B27-6A8C-4A54-B609-237671DD50AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8C1B27-6A8C-4A54-B609-237671DD50AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8C1B27-6A8C-4A54-B609-237671DD50AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8C1B27-6A8C-4A54-B609-237671DD50AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C28FE55D-FE9C-4F3C-A0D8-17D6B7CD3A06}
+	EndGlobalSection
+EndGlobal

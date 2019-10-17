@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Copyright>Copyright © 2019 Fujio Kojima</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Fujiwo/Shos.Windows/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Fujiwo/Shos.Windows/</RepositoryUrl>
+    <PackageReleaseNotes>See also: https://github.com/Fujiwo/Shos.Windows/</PackageReleaseNotes>
+    <Description>WPF (.NET Core) Control Library (FontComboBox) for .NET Core 3.0 or later</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <Version>0.2.0</Version>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Authors>Fujio Kojima</Authors>
+    <Company>Sho's Software</Company>
+    <PackageId>Shos.Windows</PackageId>
+    <Product>Shos.Windows</Product>
+    <AssemblyName>Shos.Windows</AssemblyName>
+    <RootNamespace>Shos.Windows</RootNamespace>
+  </PropertyGroup>
+</Project>
