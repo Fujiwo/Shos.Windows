@@ -3,7 +3,7 @@
 WPF (.NET Core) Library.
  - FontComboBox
  - EnumToBooleanConverter (for Multiple Radio Buttons binding to a single enum)
-(for .NET Core 3.0 or later)
+(for .NET 8.0 or later)
 
 * Install as a NuGet Package: [NuGet Gallery | Shos.Windows](https://www.nuget.org/packages/Shos.Windows "NuGet Gallery | Shos.Windows")
 
@@ -12,15 +12,15 @@ WPF (.NET Core) Library.
 ### Shos.Windows.Controls
 * WPF (.NET Core) Control Library
 ** including FontComboBox
-* for .NET Core 3.0 or later
+* for .NET 8.0 or later
 
 ### Shos.Windows.Data
 * WPF (.NET Core) Library
 ** including EnumToBooleanConverter (for Multiple Radio Buttons binding to a single enum)
-* for .NET Core 3.0 or later
+* for .NET 8.0 or later
 
 ### Shos.Windows.Controls.FontComboBoxSample
-* WPF (.NET Core)  Sample for Shos.Windows.Controls
+* WPF (.NET)  Sample for Shos.Windows.Controls
 
 ## Controls
 
@@ -53,7 +53,7 @@ Fujio Kojima: a software developer in Japan
 * Microsoft MVP for Development Tools - Visual C# (Jul. 2005 - Dec. 2014)
 * Microsoft MVP for .NET (Jan. 2015 - Oct. 2015)
 * Microsoft MVP for Visual Studio and Development Technologies (Nov. 2015 - Jun. 2018)
-* Microsoft MVP for Developer Technologies (Nov. 2018 - Jun. 2020)
+* Microsoft MVP for Developer Technologies (Nov. 2018 - Jun. 2024)
 * [MVP Profile](https://mvp.microsoft.com/en-us/PublicProfile/21482 "MVP Profile")
 * [Blog (Japanese)](http://wp.shos.info "Blog (Japanese)")
 * [Web Site (Japanese)](http://www.shos.info "Web Site (Japanese)")
