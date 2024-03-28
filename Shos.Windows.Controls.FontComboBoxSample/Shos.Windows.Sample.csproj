@@ -16,7 +16,11 @@
     <RootNamespace>Shos.Windows.Sample</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="Roslynator.Analyzers" Version="4.12.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shos.Windows\Shos.Windows.csproj" />
