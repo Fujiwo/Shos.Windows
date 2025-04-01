@@ -4,7 +4,7 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <Copyright>Copyright © 2019-2024 Fujio Kojima</Copyright>
+    <Copyright>Copyright © 2019-2025 Fujio Kojima</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Fujiwo/Shos.Windows/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Fujiwo/Shos.Windows/</RepositoryUrl>

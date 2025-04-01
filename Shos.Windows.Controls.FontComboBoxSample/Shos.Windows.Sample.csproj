@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/Fujiwo/Shos.Windows/</RepositoryUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>WPF (.NET Core) Sample for Shos.Windows</Description>
-    <Copyright>Copyright © 2019-2024 Fujio Kojima</Copyright>
+    <Copyright>Copyright © 2019-2025 Fujio Kojima</Copyright>
     <Authors>Fujio Kojima</Authors>
     <Company>Sho's Software</Company>
     <RootNamespace>Shos.Windows.Sample</RootNamespace>
