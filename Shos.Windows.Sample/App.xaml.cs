@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace FontComboBoxSample
+namespace Shos.Windows.Sample
 {
     public partial class App : Application
     { }

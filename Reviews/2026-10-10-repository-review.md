@@ -244,7 +244,7 @@ public object ConvertBack(object? value, Type targetType, object? parameter, Cul
 
 - `IsPackable=false` がないため、ソリューションで `dotnet pack` するとサンプルまでパックされます。パッケージ用メタデータ (`PackageLicenseExpression` など) も不要です。
 - 名前が統一されていません。
-  - フォルダー: `Shos.Windows.Controls.FontComboBoxSample`
+  - フォルダー: `Shos.Windows.Sample`
   - プロジェクト: `Shos.Windows.Sample`
   - `App` の名前空間: `FontComboBoxSample` (`App.xaml:1`, `App.xaml.cs:3`)
   - `MainWindow` / `MainViewModel` の名前空間: `Shos.Windows.Sample`
@@ -290,3 +290,30 @@ public object ConvertBack(object? value, Type targetType, object? parameter, Cul
 4. **M-6, M-7**: csproj を整理する (Roslynator の重複削除、SDK 指定の変更)。
 5. README を現状に合わせて修正する。
 6. テストと CI を追加する。
+
+---
+
+## 対応状況 (2026-10-10 追記)
+
+| 項目 | 状況 | 内容 |
+|---|---|---|
+| H-1 | 対応済 | `FontFamilyName` は常に `FontFamily.Source` を返すように変更。表示用に `DisplayFontFamily` を追加 |
+| H-2 | 対応済 | `FontFamily.Source` で比較 (大文字小文字は区別しない) |
+| H-3 | 対応済 | `FrameworkPropertyMetadataOptions.BindsTwoWayByDefault` に変更。内部からの更新は `SetCurrentValue` に統一 |
+| H-4 | 対応済 | コンストラクターで既定値から `SelectedItem` を同期 |
+| M-1 | 対応済 | `IsSymbol` を `FirstOrDefault` + `try/catch` で防御。項目一覧を `Lazy` にして、型初期化時に読み込まないように変更 |
+| M-2 | 対応済 | 一致しない値が設定されたら選択を解除し、ほかのプロパティもクリア (設定されたプロパティ自体の値は保持) |
+| M-3 | 対応済 | 同期処理を `Select` メソッドに一本化し、再入防止フラグを追加 |
+| M-4 | 対応済 | `TextSearch.TextPath="LocalFontFamilyName"` と `ToString()` を追加 |
+| M-5 | 対応済 | 例外を投げない実装に変更。enum 値パラメーター、`int` 以外を基にする enum、`Nullable<TEnum>` に対応。OFF 時は `Binding.DoNothing` を返す |
+| M-6 | 対応済 | Roslynator の重複参照を削除。共通設定を `Directory.Build.props` に集約 |
+| M-7 | 対応済 | `Sdk="Microsoft.NET.Sdk"` に変更 |
+| L-1 | 一部対応 | null 条件演算子の整理、`nameof`、`OnSelectionChanged` のオーバーライド、XML ドキュメントコメント。ローカル名のカルチャ (`CurrentCulture`) と `Language` の設定は、グリフの描画にも影響するため従来どおりとした |
+| §2 XAML | 対応済 | `FontSize="16"` をルートへ移動 (利用者が上書き可能)、スクロールバーを `Auto` に、`CanVerticallyScroll` を削除 |
+| L-2 | 対応済 | Description、PackageTags、ライセンス同意不要、XML ドキュメント生成、snupkg、バージョン一元化、launchSettings.json の削除。バージョンを 1.0.0 に上げた。`GeneratePackageOnBuild` は CI でパッケージを集めるのに使うため残した |
+| L-3 | 対応済 | `IsPackable=false`、名前空間の統一、`SetProperty` の戻り値を使用、`x:Static` パラメーター、冗長な `#nullable` の削除。フォルダー名を `Shos.Windows.Sample` に変更。Prism は 8.1.97 (MIT) のまま |
+| §5 README | 対応済 | 構成・使用例・プロパティ説明を更新し、リンクを https に変更 |
+| license | 対応済 | `license` と `Directory.Build.props` の著作権表記を `2017-2026` にそろえた |
+| §6 テスト | 対応済 | `Shos.Windows.Tests` (xUnit) を追加 |
+| §6 CI | 対応済 | `.github/workflows/build.yml` (windows-latest でビルド・テスト・パッケージのアップロード) を追加 |
+| §6 改行 | 対応済 | `.gitattributes` を `* text=auto eol=crlf` に変更 |
