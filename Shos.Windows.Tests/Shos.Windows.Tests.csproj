@@ -13,6 +13,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Shos.Windows\Shos.Windows.csproj" />
   </ItemGroup>
 </Project>
