@@ -1,5 +1,7 @@
 # Shos.Windows
 
+English | [日本語](https://github.com/Fujiwo/Shos.Windows/blob/master/README.jp.md)
+
 [![build](https://github.com/Fujiwo/Shos.Windows/actions/workflows/build.yml/badge.svg)](https://github.com/Fujiwo/Shos.Windows/actions/workflows/build.yml)
 [![NuGet](https://img.shields.io/nuget/v/Shos.Windows.svg)](https://www.nuget.org/packages/Shos.Windows)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Fujiwo/Shos.Windows/blob/master/license)
