@@ -22,6 +22,44 @@ dotnet add package Shos.Windows
 - .NET 8.0 (`net8.0-windows`) or .NET 10.0 (`net10.0-windows`)
 - WPF (`<UseWPF>true</UseWPF>`)
 
+## Class Diagram
+
+The public types and members of Shos.Windows (`+`: public, `#`: protected, underlined: static).
+`ComboBox` (`System.Windows.Controls`) and `IValueConverter` (`System.Windows.Data`) are WPF types.
+
+```mermaid
+classDiagram
+    direction LR
+
+    class ComboBox
+    class IValueConverter {
+        <<interface>>
+    }
+
+    namespace Shos.Windows.Controls {
+        class FontComboBox {
+            +DependencyProperty SelectedFontFamilyProperty$
+            +DependencyProperty SelectedFontFamilyNameProperty$
+            +DependencyProperty SelectedLocalFontFamilyNameProperty$
+            +FontFamily? SelectedFontFamily
+            +string SelectedFontFamilyName
+            +string SelectedLocalFontFamilyName
+            +FontComboBox()
+            #OnSelectionChanged(SelectionChangedEventArgs e) void
+        }
+    }
+
+    namespace Shos.Windows.Data {
+        class EnumToBooleanConverter {
+            +Convert(object? value, Type targetType, object? parameter, CultureInfo culture) object
+            +ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture) object
+        }
+    }
+
+    ComboBox <|-- FontComboBox
+    IValueConverter <|.. EnumToBooleanConverter
+```
+
 ## Controls
 
 ### FontComboBox
