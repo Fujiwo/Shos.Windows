@@ -5,7 +5,7 @@
     <AssemblyName>Shos.Windows</AssemblyName>
     <RootNamespace>Shos.Windows</RootNamespace>
     <Version>1.0.0</Version>
-    <Description>WPF (.NET) Library for .NET 8.0 or later: FontComboBox and EnumToBooleanConverter (for multiple radio buttons binding to a single enum)</Description>
+    <Description>WPF (.NET) Library for .NET 8.0 and .NET 10.0: FontComboBox and EnumToBooleanConverter (for multiple radio buttons binding to a single enum)</Description>
     <PackageTags>WPF;FontComboBox;Font;ComboBox;EnumToBooleanConverter;Converter;RadioButton</PackageTags>
     <PackageReleaseNotes>See also: https://github.com/Fujiwo/Shos.Windows/</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
