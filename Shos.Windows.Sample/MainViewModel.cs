@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using Prism.Mvvm;
+﻿using Prism.Mvvm;
 
 namespace Shos.Windows.Sample
 {
@@ -20,8 +18,8 @@ namespace Shos.Windows.Sample
         public FontSizeKind FontSizeKind {
             get => fontSizeKind;
             set {
-                SetProperty(ref fontSizeKind, value);
-                RaisePropertyChanged(nameof(FontSize));
+                if (SetProperty(ref fontSizeKind, value))
+                    RaisePropertyChanged(nameof(FontSize));
             }
         }
 

@@ -13,14 +13,14 @@
         <local:MainViewModel x:Key="viewModel" />
     </Window.Resources>
     <StackPanel Orientation="Vertical" DataContext="{Binding Source={StaticResource viewModel}}">
-        <shoswindowscontrols:FontComboBox SelectedFontFamilyName="{Binding SelectedFontFamilyName, Mode=TwoWay}" SelectedLocalFontFamilyName="{Binding SelectedLocalFontFamilyName, Mode=TwoWay}" />
+        <shoswindowscontrols:FontComboBox SelectedFontFamilyName="{Binding SelectedFontFamilyName}" SelectedLocalFontFamilyName="{Binding SelectedLocalFontFamilyName}" />
         <TextBox Text="{Binding SelectedFontFamilyName, Mode=TwoWay}" FontFamily="{Binding SelectedFontFamilyName}" FontSize="{Binding FontSize}" />
         <TextBox Text="{Binding SelectedLocalFontFamilyName, Mode=TwoWay}" FontFamily="{Binding SelectedFontFamilyName}" FontSize="{Binding FontSize}" />
         <GroupBox Header="Font Size">
             <StackPanel>
-                <RadioButton GroupName="Font Size" Content="Small"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Small , Mode=TwoWay }" />
-                <RadioButton GroupName="Font Size" Content="Medium" IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Medium, Mode=TwoWay }" />
-                <RadioButton GroupName="Font Size" Content="Large"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter=Large , Mode=TwoWay }" />
+                <RadioButton GroupName="Font Size" Content="Small"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static local:FontSizeKind.Small}}" />
+                <RadioButton GroupName="Font Size" Content="Medium" IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static local:FontSizeKind.Medium}}" />
+                <RadioButton GroupName="Font Size" Content="Large"  IsChecked="{Binding FontSizeKind, Converter={StaticResource enumToBooleanConverter}, ConverterParameter={x:Static local:FontSizeKind.Large}}" />
             </StackPanel>
         </GroupBox>
     </StackPanel>
