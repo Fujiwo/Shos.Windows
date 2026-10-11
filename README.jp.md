@@ -91,6 +91,8 @@ classDiagram
 
 #### 使用例
 
+![FontComboBox](Images/shos-windows-snapshot-1.png)
+
 ```xml
 <Window xmlns:shoswindowscontrols="clr-namespace:Shos.Windows.Controls;assembly=Shos.Windows" ...>
     <StackPanel>
@@ -129,6 +131,8 @@ null 許容の列挙型プロパティ (例: `FontSizeKind?`) にも対応して
 値が列挙型でない場合や、パラメーターが列挙型に一致しない場合、`Convert` は `DependencyProperty.UnsetValue` を返します。
 
 #### 使用例
+
+![EnumToBooleanConverter](Images/shos-windows-snapshot-2.png)
 
 ```csharp
 public enum FontSizeKind { Small, Medium, Large }

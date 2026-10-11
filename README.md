@@ -91,6 +91,8 @@ When a value that matches no system font is set, the selection is cleared (`Sele
 
 #### Example
 
+![FontComboBox](Images/shos-windows-snapshot-1.png)
+
 ```xml
 <Window xmlns:shoswindowscontrols="clr-namespace:Shos.Windows.Controls;assembly=Shos.Windows" ...>
     <StackPanel>
@@ -129,6 +131,8 @@ Nullable enum properties (e.g. `FontSizeKind?`) are also supported.
 When the value is not an enum or the parameter does not match the enum type, `Convert` returns `DependencyProperty.UnsetValue`.
 
 #### Example
+
+![EnumToBooleanConverter](Images/shos-windows-snapshot-2.png)
 
 ```csharp
 public enum FontSizeKind { Small, Medium, Large }
